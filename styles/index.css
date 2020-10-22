@@ -1,12 +1,81 @@
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html, body {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+body a {
+  color: #5e5e5e;
+}
+
+body a:hover {
+  color: white;
+}
+
+body h1, body h2, body h3, body h4 {
+  color: #e6e6e6;
+  margin: 5% 0 2% 0;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin: 3.5% 0 6.5% 0;
+}
+
+.container p {
+  margin: 3% 0;
+}
+
+.container p, .container ol li, .container ul li {
+  line-height: 1.5em;
+  color: #a1a1a1;
+}
+
+.container p em, .container p strong, .container ol li em, .container ol li strong, .container ul li em, .container ul li strong {
+  color: white;
+}
+
+.container .addInfo {
+  border: 1px solid #666;
+  margin: 10% 0 30% 0;
+  width: 80%;
+  position: relative;
+}
+
+.container .addInfo h4 {
+  position: absolute;
+  top: -.6em;
+  left: 10%;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    width: 90%;
+  }
+  .container .addInfo {
+    width: 100%;
+  }
 }
 
 nav {
