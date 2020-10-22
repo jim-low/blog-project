@@ -1,11 +1,13 @@
 @import './mixins';
 @import './variables';
 @import './base';
-@import './http-https';
-@import './ipv4-ipv6';
+@import './blog1';
+@import './blog2';
+// @import './http-https';
+// @import './http-status';
 
 nav {
-	display: flex;
+	display: none;
 	height: 22vh;
 	border: thin solid black;
 
@@ -109,6 +111,10 @@ nav {
 		margin-top: 5%;
 		width: 100%;
 		display: flex;
+
+		// &:hover {
+		// 	color: rgba(6, 82, 221, 0.75);
+		// }
 
 		.posts, .addInfo {
 			margin: 0 auto;
