@@ -1,0 +1,23 @@
+@mixin flexcol {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flexcenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexwrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+@mixin abscenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
