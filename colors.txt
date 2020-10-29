@@ -1,0 +1,4 @@
+type - color
+keywords - #CC2020
+explanation - #31901D
+examples - #5810DF
