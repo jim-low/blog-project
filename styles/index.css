@@ -24,37 +24,6 @@ html, body {
   margin-top: 2%;
 }
 
-.container .box-link {
-  border: 2px solid black;
-  padding: 0.75em;
-  position: relative;
-  width: 80%;
-  margin: 5% auto;
-}
-
-.container .box-link h4 {
-  position: absolute;
-  top: -0.6em;
-  background-color: white;
-  padding: 0 5px;
-}
-
-.container .box-link li {
-  list-style-type: none;
-}
-
-.container .box-link li:nth-of-type(n + 2) {
-  margin-top: 1.25%;
-}
-
-.container .box-link a {
-  color: cyan;
-}
-
-.container .box-link a:hover {
-  color: #009999;
-}
-
 .container .sect {
   margin-top: 5%;
 }
@@ -87,16 +56,166 @@ html, body {
   text-transform: capitalize;
 }
 
+.info-box {
+  border: 2px solid black;
+  padding: 0.75em;
+  position: relative;
+  width: 80%;
+  margin: 5% auto;
+}
+
+.info-box h4 {
+  text-transform: capitalize;
+  position: absolute;
+  top: -0.6em;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.info-box li {
+  list-style-type: none;
+}
+
+.info-box li:nth-of-type(n + 2) {
+  margin-top: 1.25%;
+}
+
+.info-box a {
+  color: cyan;
+}
+
+.info-box a:hover {
+  color: #009999;
+}
+
+.color-box {
+  position: fixed;
+  top: 0%;
+  left: 0.25%;
+  width: 20%;
+}
+
+.color-box p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+  width: 40%;
+}
+
+.color-box span {
+  display: inline-block;
+  width: 10%;
+  height: 1em;
+}
+
+.color-box .color {
+  width: 30%;
+  border: 1px solid #000;
+}
+
+.color-box .color.keyword {
+  background-color: #cc2020;
+}
+
+.color-box .color.example {
+  background-color: #5810df;
+}
+
+.color-box .color.explain {
+  background-color: #31901d;
+}
+
+.color-toggle-btn {
+  position: fixed;
+  top: 2%;
+  right: 2.5%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.75rem;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.keyword {
+  color: #cc2020;
+  background-color: rgba(204, 32, 32, 0.5);
+}
+
+.example {
+  color: #5810df;
+  background-color: rgba(88, 16, 22, 0.53);
+}
+
+.explain {
+  color: #31901d;
+  background-color: rgba(49, 144, 29, 0.5);
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
   }
+  .color-box {
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    height: 110vh;
+    width: 30%;
+    background-color: #fff;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .container .box-link {
+  .info-box {
     margin: 5% auto 5% 0;
     width: 95%;
+  }
+}
+
+@-webkit-keyframes glideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 72.5%;
+  }
+}
+
+@keyframes glideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 72.5%;
+  }
+}
+
+@-webkit-keyframes glideOut {
+  from {
+    left: 72.5%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes glideOut {
+  from {
+    left: 72.5%;
+  }
+  to {
+    left: 100%;
   }
 }
 
