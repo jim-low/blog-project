@@ -75,57 +75,6 @@
 	}
 }
 
-.color-box {
-	position: fixed;
-	top: 5%;
-	left: 1.25%;
-	width: 20%;
-	margin: 0;
-
-	p {
-		@include flexcenter;
-		justify-content: space-between;
-		margin-top: 2%;
-		width: 40%;
-	}
-	
-	span {
-		display: inline-block;
-		width: 10%;
-		height: 1em;
-	}
-	
-	.color {
-		width: 30%;
-		border: 1px solid #000;
-
-		&.keyword {
-			background-color: #cc2020;
-		}
-
-		&.example {
-			background-color: #5810df;
-		}
-		
-		&.explain {
-			background-color: #31901d;
-		}
-	}
-}
-
-.color-toggle-btn {
-	display: none;
-	position: fixed;
-	top: 2%;
-	right: 2.5%;
-	background: none;
-	outline: none;
-	border: none;
-	font-size: 1.75rem;
-	z-index: 3;
-	cursor: pointer;
-}
-
 .keyword {
 	color: #cc2020;
 	background-color: rgba(204, 32, 32, 0.5);
@@ -145,91 +94,11 @@
 	.container {
 		width: 90%;
 	}
-
-	.color-box {
-		top: 0%;
-		left: 100%;
-		width: 60%;
-		height: auto;
-		background-color: #fff;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-
-		h4 {
-			margin: 25% 0 15% 0;
-			position: relative;
-		}
-	}
-
-	.color-toggle-btn {
-		display: block;
-	}
 }
 
 @media only screen and (max-width: 480px) {
 	.info-box {
 		margin: 5% auto 5% 0;
 		width: 95%;
-	}
-
-	.color-box {
-		margin: 0;
-		width: 60%;
-		h4 {
-			text-align: left;
-			width: 65%;
-		}
-
-		span {
-			display: none;
-		}
-
-		p {
-			width: 65%;
-		}
-
-		.color {
-			display: inline-block;
-			width: 100%;
-			padding: .75em;
-			@include flexcenter;
-
-			&::before {
-				content: "";
-				color: white;
-			}
-		}
-
-		.keyword::before {
-			content: "keyword";
-		}
-
-		.example::before {
-			content: "example";
-		}
-
-		.explain::before {
-			content: "explanation";
-		}
-	}
-}
-
-@keyframes glideIn {
-	from {
-		left: 100%;
-	}
-
-	to {
-		left: 60vw;
-	}
-}
-@keyframes glideOut {
-	from {
-		left: 60vw;
-	}
-
-	to {
-		left: 100%;
 	}
 }
