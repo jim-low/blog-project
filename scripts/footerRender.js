@@ -36,6 +36,6 @@ document.querySelector("footer").innerHTML +=
 		</div>
 		<div class="cpy-right">
 			<p class="cpy-right-para">
-				Copyright &copy; | Created and maintained by <span class="person">jim low lap hong</span> and<spanclass="person">jason liew jun xian</spanclass=>
+				Copyright &copy; | Created and maintained by <span class="person">jim low lap hong</span> and <span class="person">jason liew jun xian</span>
 			</p
 		</div>`
