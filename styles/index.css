@@ -379,6 +379,7 @@ header p {
   text-decoration: none;
   border-radius: 1em;
   margin: 1%;
+  text-align: center;
 }
 
 footer {
