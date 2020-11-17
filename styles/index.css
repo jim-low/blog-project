@@ -1,7 +1,18 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
 header {
-  width: 50%;
-  margin: 2% auto 5% auto;
-  text-align: center;
   width: 60%;
   margin: 2% auto 5% auto;
   text-align: center;
