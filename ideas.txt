@@ -1,2 +1,0 @@
-javascript:
-function to count blog clicks

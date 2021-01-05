@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.light {
+    background-color: #F2F2F2;
+}
+
+.light .title, .light .desc {
+    color: #161616;
+}
+
+.dark {
+    background-color: #202020;
+}
+
+.dark .title, .dark .desc {
+    color: #D3D3D3;
+}
+
+.dark .link {
+    color: #B158EA;
+}
+
+    </style>
+</head>
+<body>
+    <div class="light">
+        <h2 class="title">Title of Project</h2>
+        <p><a href="www.example.com" class="link">Link to Project</a></p>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+    </div>
+
+    <div class="dark">
+        <h2 class="title">Title of Project</h2>
+        <p><a href="www.example.com" class="link">Link to Project</a></p>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus!</p>
+    </div>
+
+    </body>
+</html>

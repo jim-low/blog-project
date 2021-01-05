@@ -1,0 +1,30 @@
+Things to agree on first:
+    Project Wise:
+        - Project Structure
+        - Usage
+    Design Wise:
+        - Color Palatte (Light & Dark)
+        - Gallery Layout (not yet discussed)
+
+Project Structure:
+    - Keeping it simple
+    - Showcase all kinds of project (Both static and dynamic)
+
+Usage:
+    - To be continued
+
+Color Palatte:
+    Things to color:
+        - Background
+        - Links
+        - Paragraphs
+        - Title of Project
+
+    - Light:
+        white: #F2F2F2
+
+    - Dark:
+
+Gallery Layout (CSS Grid):
+    - 
+
