@@ -21,10 +21,14 @@ Color Palatte:
         - Title of Project
 
     - Light:
-        white: #F2F2F2
+        background: #F2F2F2
+        title and paragraph: #161616
+        links: default
 
     - Dark:
+        background: #202020
+        title and paragraph: #D3D3D3
+        links: #B158EA
 
-Gallery Layout (CSS Grid):
-    - 
+Gallery Layout (CSS Grid) (not yet discussed)
 
